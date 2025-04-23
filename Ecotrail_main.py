@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="EcoTrail AI")
+st.set_page_config(page_title="EcoTrail AI", page_icon="🌿", layout="centered")
 
 page = st.sidebar.selectbox("Choose a Feature", [
     "Trail Info",
