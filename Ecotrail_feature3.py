@@ -1,10 +1,11 @@
-from openai import OpenAI
 import streamlit as st
-import pandas as pd
-client = OpenAI(api_key="api_key")
-
-# Set page config
 st.set_page_config(page_title="Eco Actions Tracker", page_icon="🌿", layout="centered")
+
+from openai import OpenAI
+import pandas as pd
+
+# Now you can load your API key from Streamlit secrets
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # Initialize session state
 if 'eco_points' not in st.session_state:
