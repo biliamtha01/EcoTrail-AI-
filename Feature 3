@@ -1,7 +1,7 @@
 from openai import OpenAI
 import streamlit as st
 import pandas as pd
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="api_key")
 
 # Set page config
 st.set_page_config(page_title="Eco Actions Tracker", page_icon="🌿", layout="centered")
