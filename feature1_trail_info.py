@@ -1,5 +1,7 @@
 from openai import OpenAI
 import streamlit as st
+st.set_page_config(page_title="Trail Info", layout="centered")
+
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
