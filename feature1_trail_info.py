@@ -4,7 +4,6 @@ import pandas as pd
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-st.set_page_config(page_title="Trail Info", layout="centered")
 
 st.title("Trail Info")
 st.write("This section could describe trails, summaries, or load structured trail knowledge.")
