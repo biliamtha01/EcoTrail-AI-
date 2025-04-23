@@ -3,7 +3,7 @@ from openai import OpenAI
 
 #code structered by OpenAI gpt 4.0
 
-client = OpenAI (api_key="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")
+client = OpenAI (api_key="api_key")
 
 # Sample San Jose trail options (expand as needed)
 trails = [
