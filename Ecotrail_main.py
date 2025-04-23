@@ -1,20 +1,16 @@
-# main.py
-
 import streamlit as st
 
-st.set_page_config(page_title="EcoTrail AI", layout="centered")
+st.set_page_config(page_title="EcoTrail AI")
 
-st.title("🌿 EcoTrail AI")
-
-page = st.sidebar.selectbox("Select a Feature", [
-    "Trail Info (Feature 1)",
-    "Creek Trails Report (Feature 2)",
-    "Image Upload Analyzer (Feature 3)"
+page = st.sidebar.selectbox("Choose a Feature", [
+    "Trail Info",
+    "Creek Trails Report",
+    "Image Upload Analyzer"
 ])
 
-if page == "Trail Info (Feature 1)":
+if page == "Trail Info":
     import feature1_trail_info
-elif page == "Creek Trails Report (Feature 2)":
+elif page == "Creek Trails Report":
     import creektrails_M4
-elif page == "Image Upload Analyzer (Feature 3)":
+elif page == "Image Upload Analyzer":
     import Ecotrail_feature3
