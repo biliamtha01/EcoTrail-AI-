@@ -2,7 +2,6 @@ import streamlit as st
 from openai import OpenAI
 import pandas as pd
 
-st.set_page_config(page_title="Eco Actions Tracker", page_icon="🌿", layout="centered")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
