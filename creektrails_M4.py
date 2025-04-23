@@ -1,4 +1,6 @@
 import streamlit as st
+st.set_page_config(page_title="EcoTrail AI – Prototype v2", page_icon="🌿", layout="centered")
+
 import pandas as pd
 from openai import OpenAI
 from PIL import Image
@@ -6,7 +8,7 @@ import base64
 import io
 
 # Initialize OpenAI
-client = OpenAI(api_key="api_key")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.title("🌿 EcoTrail AI – Prototype v2")
 st.write("Learn about your trail, upload issue photos, and generate a formal report using AI.")
