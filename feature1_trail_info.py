@@ -1,9 +1,8 @@
-import streamlit as st
 from openai import OpenAI
+import streamlit as st
 
-#code structered by OpenAI gpt 4.0
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
-client = OpenAI (api_key="api_key")
 
 # Sample San Jose trail options (expand as needed)
 trails = [
