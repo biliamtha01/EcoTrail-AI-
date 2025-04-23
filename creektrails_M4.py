@@ -1,5 +1,5 @@
 import streamlit as st
-st.set_page_config(page_title="EcoTrail AI – Prototype v2", page_icon="🌿", layout="centered")
+st.set_page_config(page_title="Trail Report Generator", page_icon="🌿", layout="centered")
 
 import pandas as pd
 from openai import OpenAI
