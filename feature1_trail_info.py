@@ -1,7 +1,7 @@
-from openai import OpenAI
 import streamlit as st
-st.set_page_config(page_title="Trail Info", layout="centered")
+st.set_page_config(page_title="Your Title", page_icon="🌿", layout="centered")
 
+from openai import OpenAI
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
