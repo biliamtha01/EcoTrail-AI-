@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_page_config(page_title="Trail Info", page_icon="🌿", layout="centered")
 
 from openai import OpenAI
 
