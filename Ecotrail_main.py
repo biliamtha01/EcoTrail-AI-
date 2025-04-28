@@ -1,5 +1,5 @@
 import streamlit as st
-import feature
+import feature1
 import feature2_finalversion
 import feature3_finalversion
 
