@@ -1,4 +1,7 @@
 import streamlit as st
+import feature
+import feature2_finalversion
+import feature3_finalversion
 
 st.set_page_config(page_title="EcoTrail AI", page_icon="🌿", layout="centered")
 
@@ -9,8 +12,8 @@ page = st.sidebar.selectbox("Choose a Feature", [
 ])
 
 if page == "Trail Info":
-    import feature
+    feature1.main()
 elif page == "Creek Trails Report":
-    import feature2_finalversion
+    feature2_finalversion.main()
 elif page == "Image Upload Analyzer":
-    import feature3_finalversion
+    feature3_finalversion.main()
